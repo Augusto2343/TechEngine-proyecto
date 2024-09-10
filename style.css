@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: electrolize;
+    src: url(fuentes/Electrolize/Electrolize-Regular.ttf);
+}
+@font-face {
+    font-family: titillium;
+    src: url(fuentes/Titillium_Web/TitilliumWeb-Light.ttf);
+}
+:root{
+  --color-links:#077187 ;
+  --color-titulo:#5C8374;
+  --color-negro:#000;
+  --color-main:#040C11;
+  --color-copy:#93B1A6;
+}
+body{
+    font-family: "Titillium Web";
+    background-color: #040C11;
+}
+.main{
+
+  width: 100%;
+  color: white;
+}
+header{
+    padding: 10px;
+    margin: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row  wrap;
+    justify-content: space-evenly;
+  align-items: center;
+}
+  
+.subTitPag{
+  font-family: "Electrolize";
+  color: var(--color-titulo);
+}
+.cartaBanner{
+  position: relative;
+  top: 20%;
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid rgb(4, 79, 88);
+  border-radius: 5px;
+  left: 30%;
+  margin: 0;
+  text-align: center;
+  padding: 30px;
+}
+.imgBanner{
+  width: 100%;
+  background-image: url("./imagenes/imgBanner.png");
+  background-attachment: fixed;
+  height: 800px;
+}
+.parrafoBanner{
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.tituloBanner{
+  margin-bottom: 5px;
+  font-size: 35px;
+}
+.btnBanner{
+  text-decoration: none;
+  color: var(--color-links); 
+  text-transform: uppercase;
+}
+.tituloPag{
+    font-family: electrolize;
+    margin-left: 50px;
+    color: black;
+    text-decoration: none;
+}
+.tituloPag span{
+  color: var(--color-titulo);
+}
+.navHeader .linkNavHeader{
+    color:var(--color-links);
+    text-decoration: none;
+    margin: 5px;
+
+  text-transform: uppercase;
+}
+#productosHome {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .cardsProductosHome {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+  }
+  
+  .cardProductoHome {
+    max-width: 400px;
+    border-radius: 5px;
+    background-image: linear-gradient(to left, #263133, #0e2529);
+    margin: 20px; 
+  }
+  
+  .imgCardProductoHome {
+    width: 100%;
+    height: 50%;
+  }
+  
+  .imgCardProductoHomeUKC {
+    width: 100%;
+    height: 50%;
+  }
+  
+  .tituloCardProductoHome {
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .btnProductoHome{
+    text-decoration: none;
+    color: var(--color-links);
+    text-transform: uppercase;
+    position: relative;
+    top: 10%;
+  }
+
+    .nosotrosHome{
+      margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .btnVerMasHome{
+      text-decoration: none;
+      color: var(--color-links);
+      text-transform: uppercase;
+
+    }
+    .nosotrosHome #parrafoNosotrosHome{
+      max-width: 1200px;
+      margin: 0 auto;
+      font-size: 18px;
+      text-align: justify;
+      margin-bottom: 20px
+    }
+    .contactoHome{
+      display: flex;
+      flex-direction: row;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .tituloFl{
+      font-size: 40px;
+      font-weight: 400;
+      margin-top: 150px;
+      font-family: electrolize;
+      max-width: 400px;
+      margin-bottom: 40px;
+      color: var(--color-titulo);
+    }
+    #imgFl{
+      max-height: 350px;
+      border-radius: 5px 5px 0px 0px;
+      opacity: 0.5;
+      min-height:auto;
+    }
+    .btnFl{
+      margin-left: 80px;
+      color: var(--color-links);
+      text-decoration: none;
+      text-transform: uppercase;
+
+    }
+    .tituloBtnFl{
+      margin-left: 40px;
+    }
+    .seccionNovedadesHome{
+      text-align: center;
+      margin-bottom: 30px;
+      margin-top:30px;
+    }
+
+    /* Atributos globales*/
+    .cartaNoticia{
+      background-color: #2c2c2c;
+      padding: 10px;
+      margin-top: 20px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: row;
+      flex-flow: row wrap;
+    }
+    .cartasNoticiasFlex{
+      display: flex;
+      flex-direction: row;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      margin-bottom: 30px;
+    }
+  
+    .imagenNoticia{
+      max-height: 200px;
+    }
+    .contenidoNoticia{
+      max-width: 300px;
+      
+    }
+    .fechaNoticia{
+      font-weight: 250;
+      opacity: 0.8;
+      margin-top: 20px;
+    }
+    .contenidoTituloNoticia{
+      display: flex;
+      flex-direction: column;
+      flex-flow: column wrap;
+      justify-content: space-between;
+    }
+    .tituloCentradoPrincipal{
+      font-size: 40px;
+      text-align: center;
+      font-family: electrolize;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+    .divisionSecciones{
+      border-style:solid ;
+      border: 0.7px solid transparent;
+      border-image: linear-gradient(to left,var(--color-main),var(--color-titulo),var(--color-main))0.7;
+    }
+    .tituloSeccion{
+      color: var(--color-titulo);
+      font-size: 35px;
+      font-weight: 400;
+      font-family: electrolize;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .parrafoFl{
+      max-width: 350px;
+      font-size: 17px;
+      margin-bottom: 10px;
+    }
+    .divisionContenidoTit{
+      border-style:solid ;
+      border: 0.7px solid transparent;
+      border-image: linear-gradient(to left,var(--color-main),var(--color-titulo),var(--color-main))0.7;
+    }
+
+        /*Footer*/
+    footer{
+      background-image: linear-gradient(to bottom,var(--color-main),var(--color-negro));
+      color:#fff;
+      padding: 5px;
+    }
+    .redesFooter{
+      margin-top: 10px;
+      margin-left: 40px;
+      margin-bottom: 00px;
+      text-align: center;
+    }
+    .linkRedes{
+      color: white;
+      text-decoration: none;
+      padding: 5px;
+    }
+
+    .divisionFooterMain{
+      border-style: solid;
+      border:0.7px solid transparent;
+      border-image: linear-gradient(to left,#040C11 ,#183d3d,#040C11)0.7;
+    }
+
+    .contenidoFooter{
+      margin-top: 10px;
+      display: flex;
+      flex-direction: row;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .navFooter{
+      list-style: none;
+    }
+    .liNavFooter{
+      margin-top: 20px;
+    }
+    .linkNavFooter{
+      text-decoration: none;
+      color: var(--color-links);
+      text-transform: uppercase;
+    }
+    .linkRedes .bi{
+      font-size: 20px
+    }
+    .copy{
+      color: var(--color-copy);
+      font-weight: 200;
+      text-align: center;
+      margin: 20px;
+    }
+
+    .tituloTextoFl{
+      margin-left: 60px; 
+      margin-top: 5%;
+
+    }
+    .tituloFlInicio{
+      font-size: 55px;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-family: electrolize;
+      max-width: 550px;
+
+      color: var(--color-titulo);
+    }
+    .imgTextFlex{
+      margin-top: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: row;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+    .imgFlInicio{
+      max-width: 900px;
+      margin-left: 50px;
+      min-width: 300px;
+
+    }
+    .linkFlInicio{
+      text-transform: uppercase;
+      color: var(--color-links);
+      text-decoration: none; 
+      margin-left: 20px;
+
+    }
+    #registradoSimbolo{
+      font-size: 0.7em;
+      vertical-align: super;
+      position: relative;
+
+    }
+    /* Atributos especialmente para Nosotros*/
+    #certificacionInicio{
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+    #certificacionInicio .bi {
+      color: #00A4D3;
+
+    }
+
+    .textoNosotrosImg .textoImg{
+      display: flex;
+      flex-direction: row;
+      flex-flow: row wrap;
+      justify-content:space-evenly ;
+      margin-top: 30px;
+      align-items: center;
+    }
+    .textoImg .parrafo{
+      max-width: 500px;
+      font-size: 20px;
+    }
+    .textoImg .imagen{
+      max-width: 700px;
+      min-width: 200px;
+    }
+    .marcasAsociadas{
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .marcasAsociadas .imagenesMarcas{
+      display: flex;
+      flex-direction: row;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+    }
+    .imagenesMarcas .marcaAsociada{
+      max-width: 200px;
+      max-height: 60px;
+    }
+    .seccionNosotrosItems{
+      margin-top: 30px;
+    }
+    .cartasItemsNosotros{
+      display: flex;
+      flex-direction: row;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      margin-bottom: 30px;
+    }
+    .cartasItemsNosotros .cartaItem{
+      background-color: #18181B;
+      max-width:500px;
+      border-radius: 20px;
+      text-align: center;
+      justify-content: space-around;
+      padding: 4px;
+      margin-top: 20px;
+    }
+    .iconoItem{
+
+      font-size: 50px
+    }
+    #iconoCpu{
+      color: #006E8C;
+
+    }
+    #iconoComunidad{
+      color: #4C7A34;
+    }
+    #iconoBrazoRobot{
+    color: #077187;
+    }
+    #iconoEco{
+      color: #4C7A34;
+    }
+
+
+    /*Atributos de contacto*/ 
+
+    .formularioContacto{
+      display: flex;
+      flex-direction: row;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    .inputsNombreCorreo{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+    }
+    .inputForm{
+      margin-top: 40px;
+      height: 50px;
+      max-width: 700px;
+      min-width: 300px;
+      border-radius: 5px;
+    }
+    #mensaje{
+      border-radius: 5px;
+      min-width: 300px;
+    }
+    #apellido{
+      margin-bottom:40px ;
+    }
+    .chechLabel{
+      display: flex;
+      flex-direction: row;
+    }
+    #enviar{
+      border-radius:5px ;
+      height: 30px;
+      background-color:#5C8374 ;
+    }
+    .botonesSubmitCancel{
+      margin-top: 40px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    #cancelar{
+      background-color:#7F3232;
+      height: 30px;
+      border-radius: 5px;
+    }
+
+    /*Atributos de novedades*/
+    .tituloSuscripcion{
+      margin-left: 50px;
+      font-family: electrolize;
+      font-size: 30px;
+      color: var(--color-titulo);
+      margin-bottom: 20px;
+    }
+    .seccionSuscripcion{
+      margin-bottom: 50px;
+      margin-top: 50px;
+    }
+    .formularioSuscripcion{
+
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      padding: 20px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      border-radius: 20px;
+      background-image: linear-gradient(to left, rgba(24, 61, 61,0.60),rgba(92, 131, 116,0.43),rgb(4, 12, 17));
+    }
+   .formularioSuscripcion #inputCorreo{
+      width: 500px;
+      height: 40px;
+      border-radius: 5px;
+    }
+    #btnSuscripcion{
+      max-width: 200px;
+      height: 35px;
+      font-size: 18px;
+      margin-top: 20px;
+      padding: 5px;
+      border-radius: 5px;
+      background-color: #5C8374 ;
+      color: white;
+      border: 1px solid transparent;
+    }
+
+    /*Estilos especialmente de catalogo*/
+    .productos{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+    .carusel{
+      width: 60%;
+      background-image: linear-gradient(to left,var(--color-main),#18181B,var(--color-main));
+    }
+    .btnsProductos{
+      display: flex;
+      flex-direction: row;
+      flex-flow: row nowrap;
+      justify-content: center;
+      list-style: none;
+    }
+   .modelo{
+      border: none;
+      height: 40px;
+      padding-left:5px;
+      padding-right: 5px;
+      width: 150px;
+      color: white;
+      background-color: transparent;
+      border-radius: 5px;
+    }
+   #kc-400{
+      background-color: white;
+      color: black;
+    }
+    .slide{
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+    }
+    .imgSlide{
+      max-width: 600px;
+      min-width: 300px;
+    }
+    .parrafoSlide{
+      max-width:200px ;
+    }
+    .tituloSlide{
+      max-width: 200px;
+      font-size: 20px;
+      font-family: electrolize;
+    }
+    .tituloTextoSlide{
+      display: flex;
+      flex-direction: column;
+      flex-flow: column  nowrap;
+      justify-content: space-evenly;
+    }
