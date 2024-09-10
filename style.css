@@ -4,7 +4,7 @@
     margin: 0;
 }
 @font-face {
-    font-family: electrolize;
+    font-family: Electrolize;
     src: url(fuentes/Electrolize/Electrolize-Regular.ttf);
 }
 @font-face {
@@ -17,6 +17,11 @@
   --color-negro:#000;
   --color-main:#040C11;
   --color-copy:#93B1A6;
+  --color-links:#077187 ;
+  --color-btnsATr:rgba(7, 114, 135, 0.300) ;
+  --color-btnsBTr:rgba(0, 134, 100, 0.300);
+  --color-btnsA:rgb(7, 114, 135) ;
+  --color-btnsB:rgb(0, 134, 100);
 }
 body{
     font-family: "Titillium Web";
@@ -30,21 +35,36 @@ body{
 header{
     padding: 10px;
     margin: 0;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    flex-flow: row  wrap;
-    justify-content: space-evenly;
-  align-items: center;
+
+
 }
-  
+#navDesp{
+  background-color: #ffffff56;
+}
+.itemNav{ 
+  padding: 5px;
+  background-image: linear-gradient(to left, var(--color-btnsATr),var(--color-btnsBTr));
+  color: white;
+  border-radius: 5%;
+
+  transition: 1s;
+}
+.itemNav:hover{
+  color: white;
+  filter: brightness(1.2);
+  background-image: linear-gradient(to left, var(--color-btnsA),var(--color-btnsB));
+
+}
+.navbar-nav{
+  gap: 30px;
+}
 .subTitPag{
   font-family: "Electrolize";
   color: var(--color-titulo);
 }
 .cartaBanner{
-  position: relative;
-  top: 20%;
+  /* position: absolute;
+  top: 20%; */
   max-width: 600px;
   background-color: rgba(0, 0, 0, 0.5);
   border: 2px solid rgb(4, 79, 88);
@@ -53,6 +73,17 @@ header{
   margin: 0;
   text-align: center;
   padding: 30px;
+  min-width: 100px;
+
+}
+.jumbotron{
+  width: 100%;
+  background-image: url("./imagenes/imgBanner.png");
+  background-attachment: fixed;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .imgBanner{
   width: 100%;
@@ -76,6 +107,7 @@ header{
 .tituloPag{
     font-family: electrolize;
     margin-left: 50px;
+    font-size: 30px;
     color: black;
     text-decoration: none;
 }
@@ -579,4 +611,14 @@ header{
       flex-direction: column;
       flex-flow: column  nowrap;
       justify-content: space-evenly;
+    }
+    @media (max-width:675px){
+      #imgFl{
+        min-width:100px;
+      }
+    }
+    @media  (max-width: 843px) {
+    .jumbotron{
+      justify-content: flex-start;
+    }
     }
