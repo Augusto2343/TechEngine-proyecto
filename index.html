@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechEngine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./bootstrap-5.1.3-dist/css/bootstrap-utilities.css">
     <link rel="stylesheet" href="./bootstrap-5.1.3-dist/css/bootstrap-grid.css">
@@ -16,22 +17,22 @@
       <nav class="navbar navbar-expand-md fixed-top" id="navDesp">
         <a class="navbar-brand tituloPag" href="#">TechEngine⚙️</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler" ><i class="fa-solid fa-bars"></i></span>  
         </button>
 
         <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
           <ul class="navbar-nav ">
             <li class="nav-item">
-              <a class="nav-link itemNav" href="#">Nosotros</a>
+              <a class="nav-link itemNav" href="./paginas/nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link itemNav" href="#">Catalogo</a>
+              <a class="nav-link itemNav" href="./paginas/catalogo.html">Catalogo</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link itemNav" href="#">Novedades</a>
+              <a class="nav-link itemNav" href="./paginas/novedades.html">Novedades</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link itemNav" href="#">Contacto</a>
+              <a class="nav-link itemNav" href="./paginas/contacto.html">Contacto</a>
             </li>
           </ul>
         </div>
@@ -68,7 +69,47 @@
         <a href="./paginas/nosotros.html" class="btnVerMasHome">Mas Info</a>
       </section>
       <hr />
-      <section id="productosHome">
+      <section class="seccionProductosHome">
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+          <ul class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+          </ul>
+
+          <div class="carousel-inner">
+            <div class="carousel-item justify-content-center active">
+              <a href=""><img class="imgCarousel" src="./imagenes/motor200KW.jpg" alt="KC-400"></a>
+              <div class="carousel-caption" >
+                <h3 class="text-black tituloCarouselInicio">KC-400</h3>
+
+              </div>
+            </div>
+            <div class="carousel-item justify-content-center">
+              <a href=""><img class="imgCarousel" src="./imagenes/motor400W.jpg" alt="UKC-200"></a>
+              <div class="carousel-caption" >
+                <h3 class="text-black tituloCarouselInicio">UKC-200</h3>
+              </div>
+            </div>
+            <div class="carousel-item justify-content-center">
+              <a href=""><img class="imgCarousel" src="./imagenes/motor500KW.webp" alt="MKC-560"></a>
+              <div class="carousel-caption" id="textoCarousel">
+                <h3 class="text-black tituloCarouselInicio" >MKC-560</h3>
+              </div>
+            </div>
+            </div>
+
+
+          <a class="carousel-control-prev" href="#carousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#carousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+  
+        </div>
+      </section>
+      <!-- <section id="productosHome">
         <h3 class="tituloSeccion">Algunos de nuestros productos</h3>
         <div class="cardsProductosHome">
           <div class="cardProductoHome">
@@ -109,7 +150,7 @@
             <a href="./paginas/catalogo.html" class="btnProductoHome">Saber más</a>
           </div>
         </div>
-      </section>
+      </section> -->
       <hr />
       <section class="contactoHome">
         <div class="tituloBtnFl">
@@ -124,23 +165,23 @@
         <hr class="divisionContenidoTit" />
         <div class="cartasNoticiasFlex">
 
-          <div class="cartaNoticia">
-            <div class="contenidoTituloNoticia">
+          <div class="cartaNoticia" id="noticia1">
             <h2 class="tituloNoticia">Próxima actualización</h2>
-            <p class="contenidoNoticia">
+            <div class="contenidoNoticia">
+            <p >
               Se espera una actualización para 2026 de nuestra página web que añadirá un nuevo producto y un parche para los errores.
             </p>
             <h5 class="fechaNoticia">14 de Septiembre de 2022</h5>
-          </div>
+            </div>
             <img src="./imagenes/codigoNoti.jpg" alt="" class="imagenNoticia" />
           </div>
 
-          <div class="cartaNoticia">
-            <div class="contenidoTituloNoticia">
+          <div class="cartaNoticia" id="noticia2">
               <h2 class="tituloNoticia">
                   Nuevo lanzamiento UKC-200 UltraLight
               </h2>
-              <p class="contenidoNoticia">
+              <div class="contenidoNoticia">
+              <p>
                 Este nuevo motor llamado UKC-200 UltraLight (Ultra liviano)
                 llegó al mercado para revolucionarlo completamente ya que es un
                 motor completamente accesible y eficiente.
@@ -150,16 +191,28 @@
             <img src="./imagenes/motorUKC-200.webp" alt="" class="imagenNoticia" />
           </div>
 
-          <div class="cartaNoticia">
-            <div class="contenidoTituloNoticia">
+          <div class="cartaNoticia" id="noticia3">
+            <h2 class="tituloNoticia">Proxima colaboración</h2>
+            <div class="contenidoNoticia">
+            <p >
+                Se anuncia una colaboración con Coradir para un nuevo producto que revolucionará al mercado nacional.
+            </p>
+            <h5 class="fechaNoticia">24 de Agosto de 2024</h5>
+          </div>
+            <img src="./imagenes/logoCoradir.jpg" alt="" class="imagenNoticia" />
+          </div>
+
+          <div class="cartaNoticia" id="noticia4">
+
             <h2 class="tituloNoticia">Está llegando!</h2>
-            <p class="contenidoNoticia">
+            <div class="contenidoNoticia">
+            <p >
               En 2026 se lanzará al mercado un vehículo eléctrico
               desarrollado íntegramente en Argentina por parte
               de Coradir y TechEngine.
             </p>
             <h5 class="fechaNoticia">28 de Agosto de 2024</h5>
-            </div>
+          </div>
             <img src="./imagenes/titaCuadrilla.webp" alt="" class="imagenNoticia" />
           </div>
         </div>
