@@ -6,31 +6,52 @@
     <title>TE Nosotros</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <header>
-        <a href="../index.html" class="tituloPag"><h1>Tech<span>Engine</span>⚙️</h1></a>
-        <h2 class="subTitPag">Nosotros</h2>
-        <nav class="navHeader">
-            <a href="../index.html" class="linkNavHeader">Inicio</a>
-            <a href="./contacto.html" class="linkNavHeader">Contacto</a>
-            <a href="./novedades.html" class="linkNavHeader">Novedades</a>
-            <a href="./catalogo.html" class="linkNavHeader">Catalogo</a>
+        <nav class="navbar navbar-expand-md fixed-top" id="navDesp">
+          <a class="navbar-brand tituloPag" href="../index.html">TechEngine⚙️</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler" ><i class="fa-solid fa-bars"></i></span>  
+          </button>
+  
+          <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link itemNav" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link itemNav" href="./catalogo.html">Catalogo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link itemNav" href="./novedades.html">Novedades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link itemNav" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
         </nav>
-    </header>
+  
+      </header>
     <main class="main">
         <div class="imgTextFlex">
-        <div class="tituloTextoFl">
-            <h3 id="certificacionInicio"><i class="bi bi-check-circle-fill"></i>Certificaciones internacionales</h3>
+        <div class="tituloTextoFl"  >
+            <h3 id="certificacionInicio" ><i class="bi bi-check-circle-fill"></i>Certificaciones internacionales</h3>
             <h2 class="tituloFlInicio">Confiabilidad Sustentabilidad Innovación</h2>
             <p class="parrafoFl">La más actualizada tecnología del mercado en nuestra planta de producción.</p>
         </div>
-        <img src="../imagenes/imagenContacto.webp" class="imgFlInicio">
+        <img src="../imagenes/imagenContacto.webp" class="imgFlInicio" >
     </div>
 
+
     <section class="marcasAsociadas">
-        <h2 class="tituloSeccion">Empresas que confiaron en nosotros</h2>
+        <h2  class="tituloSeccion">Marcas que confiaron en nosotros</h2>
+        <hr class="divisionContenidoTit">
         <div class="imagenesMarcas">
             <a href="https://www.aguascordobesas.com.ar" class="linkMarcas"><img src="../imagenes/logoAguasCordobesas.png" alt="" class="marcaAsociada"></a>
             <a href="https://www.argentina.gridohelado.com" class="linkMarcas"><img src="../imagenes/logoGrido.png" alt="" class="marcaAsociada"></a>
@@ -44,27 +65,29 @@
         <h3 class="tituloSeccion">Quienes somos</h3>
         <hr class="divisionContenidoTit">
         <div class="textoImg">
-            <img src="../imagenes/imagenParrafo(1)contacto.webp" alt="" class="imagen">
-            <p class="parrafo">Nosotros somos una compañía que fabrica motores eléctricos 100% construidos en Argentina desde hace ya 7 años. Logrando con nuestras altos estandares de calidad tener cerfificaciónes tanto nacionales como internacionales y ser reconocidos globalmente por nuestras innovaciones y productos de calidad alta.</p>
+            <img src="../imagenes/imagenParrafo(1)contacto.webp" alt="" class="imagen" data-aos="fade-up" data-aos-duration="1500">
+            <p class="parrafo" data-aos="fade-down" data-aos-duration="1000">Nosotros somos una compañía que fabrica motores eléctricos 100% construidos en Argentina desde hace ya 7 años. Logrando con nuestras altos estandares de calidad tener cerfificaciónes tanto nacionales como internacionales y ser reconocidos globalmente por nuestras innovaciones y productos de calidad alta.</p>
         </div>
         <div class="textoImg">
-            <p class="parrafo">Fundamos una campaña de recolección de plásticos, metales, vidrios y todo material reciclable para generar concientización del cuidado del medioambiente para luego utilizar todo elemento reciclado que hayamos recolectado en nuestras plantas ya que un 30% de cada motor está fabricado con elementos reciclados.</p>
-            <img src="../imagenes/imagenParrafo(2)contacto.jpg" alt="" class="imagen">
+            <p class="parrafo" data-aos="fade-down" data-aos-duration="1500">Fundamos una campaña de recolección de plásticos, metales, vidrios y todo material reciclable para generar concientización del cuidado del medioambiente para luego utilizar todo elemento reciclado que hayamos recolectado en nuestras plantas ya que un 30% de cada motor está fabricado con elementos reciclados.</p>
+            <img src="../imagenes/imagenParrafo(2)contacto.jpg" alt="" class="imagen" data-aos="fade-up" data-aos-duration="1500">
         </div>
     
 
     </section>
     <section class="seccionNosotrosItems">
+
         <h2 class="tituloSeccion">Desarrollando calidad y confianza</h2>
+        <hr class="divisionContenidoTit">
         <div class="cartasItemsNosotros">
 
-            <div class="cartaItem"> 
+            <div class="cartaItem" data-aos="fade" data-aos-duration="1000"> 
                 <i class="bi bi-cpu iconoItem" id="iconoCpu"></i>
                 <h3 class="tituloItem">Electrónica avanzada</h3>
                 <p class="parrafoItem">Tenemos lo ultimo en electrónica con sistemas avanzados y optimizados con IA logrando tener una línea de producción completamente ágil y eficiente.</p>
             </div>
 
-            <div class="cartaItem">
+            <div class="cartaItem" data-aos="fade" data-aos-duration="1400">
                 <span class="material-symbols-outlined iconoItem" id="iconoComunidad">
                     groups_2
                     </span>
@@ -72,7 +95,7 @@
                 <p class="parrafoItem">Tenemos lo ultimo en electrónica con sistemas avanzados y optimizados con IA logrando tener una línea de producción completamente ágil y eficiente.</p>
             </div>
 
-            <div class="cartaItem">
+            <div class="cartaItem" data-aos="fade" data-aos-duration="1900">
                 <span class="material-symbols-outlined iconoItem" id="iconoBrazoRobot">
                     precision_manufacturing
                     </span>
@@ -80,7 +103,7 @@
                 <p class="parrafoItem">Tenemos lo ultimo en electrónica con sistemas avanzados y optimizados con IA logrando tener una línea de producción completamente ágil y eficiente.</p>
             </div>
 
-            <div class="cartaItem">
+            <div class="cartaItem" data-aos="fade" data-aos-duration="2400">
                 <span class="material-symbols-outlined iconoItem" id="iconoEco">
                     nest_eco_leaf
                     </span>
@@ -111,5 +134,11 @@
     </div>
         <h4 class="copy">Copyright TechEngine 2024©</h4>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
