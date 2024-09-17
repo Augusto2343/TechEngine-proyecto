@@ -306,6 +306,9 @@ width: 60%;
       grid-template-columns: repeat(6, 1fr);
       gap: 50px;
     }
+    .row{
+      gap: 30px;
+    }
     .cartaNoticia{
      max-height: 400px;
       background-color: #2c2c2c;
@@ -692,7 +695,7 @@ width: 60%;
       background-image: linear-gradient(to left, rgba(24, 61, 61,0.60),rgba(92, 131, 116,0.43),rgb(4, 12, 17));
     }
    .formularioSuscripcion #inputCorreo{
-      width: 500px;
+      width: 80%;
       height: 40px;
       border-radius: 5px;
     }

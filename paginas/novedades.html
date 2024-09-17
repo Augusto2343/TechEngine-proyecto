@@ -6,31 +6,52 @@
     <title>TE Novedades</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <header>
-        <a href="../index.html" class="tituloPag"><h1>Tech<span>Engine</span>⚙️</h1></a>
-        <h2 class="subTitPag">Novedades</h2>
-        <nav class="navHeader">
-            <a href="../index.html" class="linkNavHeader">Inicio</a>
-            <a href="./contacto.html" class="linkNavHeader">Contacto</a>
-            <a href="./nosotros.html" class="linkNavHeader">Nosotros</a>
-            <a href="./catalogo.html" class="linkNavHeader">Catalogo</a>
-        </nav>
+      <nav class="navbar navbar-expand-md fixed-top" id="navDesp">
+        <a class="navbar-brand tituloPag" href="../index.html">TechEngine⚙️</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler" ><i class="fa-solid fa-bars"></i></span>  
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link itemNav" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link itemNav" href="./contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link itemNav" href="./catalogo.html">Novedades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link itemNav" href="./nosotros.html">Nosotros</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
     </header>
     <main class="main">
         <h2 class="tituloCentradoPrincipal">Novedades</h2>
         <hr class="divisionSecciones">
         <section class="noticias">
-            <div class="cartasNoticiasFlex">
-
-                <div class="cartaNoticia">
-                    <div class="contenidoTituloNoticia">
+          <div class="container-fluid">
+            <!-- Empieza la primera línea del grid-->
+            <div class="row ">
+                <div class="cartaNoticia col" data-aos="fade-up" data-aos-duration="1000">
+                    
                       <h2 class="tituloNoticia">
                           Nuevo lanzamiento UKC-200 UltraLight
                       </h2>
-                      <p class="contenidoNoticia">
+                      <div class="contenidoNoticia">
+                      <p>
                         Este nuevo motor llamado UKC-200 UltraLight (Ultra liviano)
                         llegó al mercado para revolucionarlo completamente ya que es un
                         motor completamente accesible y eficiente.
@@ -40,21 +61,26 @@
                     <img src="../imagenes/motorUKC-200.webp" alt="" class="imagenNoticia" />
                   </div>
 
-                <div class="cartaNoticia">
-                  <div class="contenidoTituloNoticia">
+                <div class="cartaNoticia col-lg-7 "  data-aos="fade-down" data-aos-duration="1500">
+
                   <h2 class="tituloNoticia">Próxima actualización</h2>
-                  <p class="contenidoNoticia">
+                  <div class="contenidoNoticia">
+                  <p >
                     Se espera una actualización para 2026 de nuestra página web que añadirá un nuevo producto y un parche para los errores.
                   </p>
                   <h5 class="fechaNoticia">14 de Septiembre de 2022</h5>
                 </div>
                   <img src="../imagenes/codigoNoti.jpg" alt="" class="imagenNoticia" />
                 </div>
+                </div>
+                <!-- Finaliza la primera línea del grid-->
+                <!-- Empieza la segunda línea del grid-->
+              <div class="row">
+                <div class="cartaNoticia col-lg-7"  data-aos="fade-up" data-aos-duration="1000">
 
-                <div class="cartaNoticia">
-                    <div class="contenidoTituloNoticia">
                     <h2 class="tituloNoticia">Nuevo Mantenimiento</h2>
-                    <p class="contenidoNoticia">
+                    <div class="contenidoNoticia">
+                    <p>
                         Se han hecho mejoras en los circuitos rectificadores y de filtrado y se mejoraron los disipadores de la nueva serie UKC-200
                     </p>
                     <h5 class="fechaNoticia">12 de Febrero de 2023</h5>
@@ -62,38 +88,55 @@
                     <img src="../imagenes/bobinadoMotor.jpg" alt="" class="imagenNoticia" />
                   </div>
                 
-                <div class="cartaNoticia">
-                    <div class="contenidoTituloNoticia">
+                <div class="cartaNoticia col"  data-aos="fade-down" data-aos-duration="1500">
+
                     <h2 class="tituloNoticia">Proxima colaboración</h2>
-                    <img src="../imagenes/logoCoradir.jpg" alt="" class="imagenNoticia" />
-                    <p class="contenidoNoticia">
+                    <div class="contenidoNoticia">
+                    <p >
                         Se anuncia una colaboración con Coradir para un nuevo producto que revolucionará al mercado nacional.
                     </p>
                     <h5 class="fechaNoticia">24 de Agosto de 2024</h5>
                     </div>
-
+                    <img src="../imagenes/logoCoradir.jpg" alt="" class="imagenNoticia" />
                   </div>
+                  </div>
+                  <!-- Finaliza la segunda línea del  grid-->
+                  <!-- Empieza la tercera línea del grid-->
+                  <div class="row">
+                <div class="cartaNoticia col"  data-aos="fade-up" data-aos-duration="1000">
 
-                <div class="cartaNoticia">
-                  <div class="contenidoTituloNoticia">
                   <h2 class="tituloNoticia">Está llegando!</h2>
-                  <img src="../imagenes/titaCuadrilla.webp" alt="" class="imagenNoticia" />
-                  <p class="contenidoNoticia">
+                  <div class="contenidoNoticia">
+                  <p>
                     En 2026 se lanzará al mercado un vehículo eléctrico
                     desarrollado íntegramente en Argentina por parte
                     de Coradir y TechEngine.
                   </p>
                   <h5 class="fechaNoticia">28 de Agosto de 2024</h5>
                   </div>
+                  <img src="../imagenes/titaCuadrilla.webp" alt="" class="imagenNoticia" />
                 </div>
-            
+
+                <div class="cartaNoticia col-lg-7"  data-aos="fade-down" data-aos-duration="1500">
+
+                  <h2 class="tituloNoticia">TechEngine se viste de verde</h2>
+                  <div class="contenidoNoticia">
+                  <p>
+                      Se anuncian nuevas recolectas de residuos reciclables para reducir el impacto ambiental que estas provocan permitiendo tener un ambiente más limpio y saludable.
+                      Los horarios son  de 9 a 12 hs todos los días  de la semana.
+                  </p>
+                  <h5 class="fechaNoticia">10 de Septiembre de 2024</h5>
+                  </div>
+                  <img src="../imagenes/imagenParrafo(2)contacto.jpg" alt="" class="imagenNoticia" />
+                </div>
+              </div>
               </div>
         </section>
         <hr class="divisionSecciones">
         <section class="seccionSuscripcion">
             <h2 class="tituloSuscripcion">Inscribirse a nuestro newsletter</h2>
             <form class="formularioSuscripcion">
-                <input id="inputCorreo" type="text" placeholder="Ingrese su correo:">
+                <input id="inputCorreo" type="email" placeholder="Ingrese su correo:">
                 <button type="submit" id="btnSuscripcion">Suscribirse</button>
             </form>
 
@@ -119,5 +162,11 @@
     </div>
         <h4 class="copy">Copyright TechEngine 2024©</h4>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
