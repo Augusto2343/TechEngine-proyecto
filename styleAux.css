@@ -660,11 +660,14 @@ width: 60%;
     }
 
     /*Atributos de novedades*/
+    .margenTop{
+      margin-top: 100px;
+    }
     .tituloSuscripcion{
       margin-left: 50px;
-      font-family: electrolize;
+      font-family: Electrolize;
       font-size: 30px;
-      color: var(--color-titulo);
+      color: #2daa2a;
       margin-bottom: 20px;
     }
     .seccionSuscripcion{
