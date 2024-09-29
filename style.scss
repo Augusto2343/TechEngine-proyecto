@@ -155,12 +155,16 @@ header{
       filter: brightness(1.2);
       filter: blur(2);
   }
+  .carousel{
+    background-color: transparent;
+  }
 #carousel{
   width: 60%;
-    
+    background-color: transparent;
   }
 .carousel-inner{
   padding-left:9%;
+  background-color: transparent;
 }
 .tituloCarouselInicio{
   color: #000;
@@ -171,6 +175,7 @@ header{
   max-width: 90%;
   max-height:90%;
   padding: 10px;
+  background-color: transparent;
 }
 .carousel-inner{
   justify-content: center ;

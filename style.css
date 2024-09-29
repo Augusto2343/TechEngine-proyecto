@@ -143,12 +143,18 @@ header {
   filter: blur(2);
 }
 
+.carousel {
+  background-color: transparent;
+}
+
 #carousel {
   width: 60%;
+  background-color: transparent;
 }
 
 .carousel-inner {
   padding-left: 9%;
+  background-color: transparent;
 }
 
 .tituloCarouselInicio {
@@ -161,6 +167,7 @@ header {
   max-width: 90%;
   max-height: 90%;
   padding: 10px;
+  background-color: transparent;
 }
 
 .carousel-inner {
