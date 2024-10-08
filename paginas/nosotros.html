@@ -12,33 +12,39 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-md fixed-top" id="navDesp">
-          <a class="navbar-brand tituloPag" href="../index.html">TechEngine⚙️</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler" ><i class="fa-solid fa-bars"></i></span>  
-          </button>
-  
-          <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
-            <ul class="navbar-nav ">
-              <li class="nav-item">
-                <a class="nav-link itemNav" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link itemNav" href="./catalogo.html">Catalogo</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link itemNav" href="./novedades.html">Novedades</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link itemNav" href="./contacto.html">Contacto</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-  
-      </header>
+
+      <input type="checkbox" id="cambioBack" class="cambioBack">
+      <label for="cambioBack" id="labelCambioBack">Cambiar Fondo</label>
     <main class="main">
+        <header>
+            <nav class="navbar navbar-expand-md fixed-top" id="navDesp">
+              <a class="navbar-brand tituloPag" href="../index.html">TechEngine⚙️</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler" ><i class="fa-solid fa-bars"></i></span>  
+              </button>
+      
+              <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
+                <ul class="navbar-nav ">
+                  <li class="nav-item">
+                    <a class="nav-link itemNav" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link itemNav activo" href="#">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link itemNav" href="./catalogo.html">Catalogo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link itemNav" href="./novedades.html">Novedades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link itemNav" href="./contacto.html" target="_blank">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+      
+          </header>
         <div class="imgTextFlex">
         <div class="tituloTextoFl"  >
             <h3 id="certificacionInicio" ><i class="bi bi-check-circle-fill"></i>Certificaciones internacionales</h3>
@@ -113,7 +119,7 @@
 
         </div>
     </section>
-    </main>
+
     <hr class="divisionFooterMain">
     <footer>
 
@@ -124,16 +130,17 @@
             <li class="liNavFooter"><a href="../index.html" class="linkNavFooter">Inicio</a></li>
             <li class="liNavFooter"><a href="./catalogo.html" class="linkNavFooter">Catalogo</a></li>
             <li class="liNavFooter"><a href="./novedades.html" class="linkNavFooter">Novedades</a></li>
-            <li class="liNavFooter"><a href="./contacto.html" class="linkNavFooter">Contacto</a></li>
+            <li class="liNavFooter"><a href="./contacto.html" class="linkNavFooter" target="_blank">Contacto</a></li>
         </ul>    
         <nav class="redesFooter">
-            <a class="linkRedes" href=""><i class="bi bi-whatsapp"></i></a>
-            <a class="linkRedes" href=""><i class="bi bi-twitter-x"></i></a>
-            <a class="linkRedes" href=""><i class="bi bi-instagram"></i></a>
-        </nav>
+            <a class="linkRedes" href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>
+            <a class="linkRedes" href="whatsapp.com/?lang=es_LA"><i class="bi bi-whatsapp"></i></a>
+            <a class="linkRedes" href="https://x.com"><i class="bi bi-twitter-x"></i></a>
+          </nav>
     </div>
         <h4 class="copy">Copyright TechEngine 2024©</h4>
     </footer>
+</main>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

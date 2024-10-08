@@ -10,13 +10,16 @@
   src: url(fuentes/Electrolize/Electrolize-Regular.ttf);
 }
 body {
+  z-index: 0;
   font-family: "Titillium Web";
-  background-image: linear-gradient(to bottom left, #000, #040C11);
 }
 
 .main {
+  z-index: 0;
   width: 100%;
   color: #fff;
+  background-image: linear-gradient(to bottom left, #000, #040C11);
+  transition: 1s;
 }
 
 header {
@@ -28,7 +31,7 @@ header {
 #navDesp {
   z-index: 999;
   animation: aparecerNav 1s;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.75);
   transition: 1s;
   height: 66px;
   width: 100%;
@@ -45,7 +48,7 @@ header {
   }
 }
 #navDesp:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgb(255, 255, 255);
 }
 
 .tituloPag {
@@ -67,7 +70,7 @@ header {
   border-radius: 5%;
   align-items: center;
   height: 36px;
-  opacity: 0.25;
+  opacity: 0.5;
   transition: 1s;
 }
 
@@ -76,6 +79,44 @@ header {
   filter: brightness(1.2);
   filter: blur(2);
   opacity: 1;
+}
+
+.activo {
+  opacity: 1;
+  scale: 1.1;
+}
+
+.collapse {
+  height: 100vh;
+}
+
+.cambioBack {
+  position: fixed;
+  left: 92%;
+  top: 40%;
+  z-index: 9999;
+  display: none;
+}
+
+#labelCambioBack {
+  position: fixed;
+  left: 92%;
+  top: 30%;
+  z-index: 9998;
+  cursor: pointer;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.397);
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.cambioBack:checked ~ .main {
+  background-image: linear-gradient(to top left, #223a31, #040C11);
+  filter: brightness(1.1);
+}
+
+#labelCambioBack:hover {
+  transform: scale(1.1);
 }
 
 .subTitPag {
@@ -125,6 +166,7 @@ header {
 }
 
 .btnBanner {
+  z-index: 999;
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
@@ -133,6 +175,7 @@ header {
   background-image: linear-gradient(to left, rgb(7, 114, 135), rgb(0, 134, 100));
   opacity: 0.5;
   transition: 1s;
+  cursor: pointer;
 }
 
 .btnBanner:hover {
@@ -152,8 +195,16 @@ header {
   background-color: transparent;
 }
 
+.carousel-item {
+  background-color: transparent;
+}
+
 .carousel-inner {
   padding-left: 9%;
+  background-color: transparent;
+}
+
+.backTransp {
   background-color: transparent;
 }
 
@@ -374,7 +425,7 @@ header {
   text-align: center;
   font-family: electrolize;
   margin-bottom: 30px;
-  margin-top: 30px;
+  margin-top: 100px;
 }
 
 .divisionSecciones {
@@ -390,6 +441,7 @@ header {
   font-family: Electrolize;
   margin-bottom: 20px;
   text-align: center;
+  z-index: 800;
 }
 
 .parrafoFl {
@@ -404,11 +456,29 @@ header {
   border-image: linear-gradient(to left, #040C11, #5C8374, #040C11) 0.7;
 }
 
+.btnVerMasToast {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 4px;
+  background-image: linear-gradient(to left, rgb(7, 114, 135), rgb(0, 134, 100));
+  border-radius: 5px;
+  opacity: 0.75;
+  color: black;
+  transition: 0.5s;
+}
+
+.btnVerMasToast:hover {
+  opacity: 0.75;
+  color: white;
+  text-decoration: none;
+}
+
 footer {
-  background-image: linear-gradient(to bottom right, #040C11, #000);
+  background-color: transparent;
   color: #fff;
   padding: 5px;
   padding-top: 0px;
+  z-index: 0;
 }
 
 .redesFooter {
@@ -498,9 +568,20 @@ footer {
 /* Atributos especialmente para Nosotros*/
 .linkFlInicio {
   text-transform: uppercase;
-  color: #077187;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
   text-decoration: none;
   margin-left: 20px;
+  background-image: linear-gradient(to left, rgb(7, 114, 135), rgb(0, 134, 100));
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.linkFlInicio:hover {
+  color: white;
+  opacity: 1;
+  text-decoration: none;
 }
 
 #registradoSimbolo {
@@ -634,7 +715,7 @@ footer {
   min-width: 300px;
   background-color: #000;
   color: white;
-  border: 1px transparent;
+  border: 2px solid rgb(4, 79, 88);
 }
 
 #mensaje:focus {
@@ -687,7 +768,7 @@ footer {
 }
 
 .margenTop {
-  margin-top: 100px;
+  padding-top: 100px;
 }
 
 .tituloSuscripcion {
@@ -756,6 +837,12 @@ footer {
 
 .imgCarouselProd {
   width: 100%;
+  filter: grayscale(100);
+  transition: 0.5s;
+}
+
+.imgCarouselProd:hover {
+  filter: grayscale(0);
 }
 
 .carousel-indicators {
@@ -862,6 +949,10 @@ footer {
   }
 }
 @media (max-width: 500px) {
+  #labelCambioBack {
+    left: 80%;
+    font-size: 14px;
+  }
   .parrafo {
     margin: 0;
     padding: 15px;
@@ -909,13 +1000,41 @@ footer {
   }
 }
 @media (max-width: 766px) {
-  .navbar-toggler {
+  .activo {
+    width: 100%;
+    scale: 1;
+  }
+  #navDesp {
+    height: auto;
+    align-items: center;
+  }
+  .itemNav {
+    border-radius: 5px;
+    justify-content: center;
+  }
+  .navbar-nav {
+    justify-content: center;
+  }
+  .navbar-collapse {
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .show {
     opacity: 1;
+  }
+  .nav-item {
+    width: 95%;
+    border-radius: 5px;
+    justify-content: center;
   }
 }
 @media (max-width: 843px) {
   .jumbotron {
     justify-content: center;
+  }
+  #labelCambioBack {
+    left: 85%;
+    font-size: 15px;
   }
   #carousel {
     width: 90%;

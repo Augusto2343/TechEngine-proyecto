@@ -15,33 +15,38 @@
 
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-md fixed-top" id="navDesp">
-        <a class="navbar-brand tituloPag" href="#">TechEngine⚙️</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler" ><i class="fa-solid fa-bars"></i></span>  
-        </button>
 
-        <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
-          <ul class="navbar-nav ">
-            <li class="nav-item">
-              <a class="nav-link itemNav" href="./paginas/nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link itemNav" href="./paginas/catalogo.html">Catalogo</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link itemNav" href="./paginas/novedades.html">Novedades</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link itemNav" href="./paginas/contacto.html">Contacto</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-    </header>
+    <input type="checkbox" id="cambioBack" class="cambioBack">
+    <label for="cambioBack" id="labelCambioBack">Cambiar Fondo</label>
     <main class="main">
+      <header>
+        <nav class="navbar navbar-expand-md fixed-top" id="navDesp">
+          <a class="navbar-brand tituloPag" href="#">TechEngine⚙️</a>
+          <button class="navbar-toggler" id="checkerNav" type="submit"  data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler" id="icoToggler"><i class="fa-solid fa-bars"></i></span>  
+      </button>
+          <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link itemNav activo" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link itemNav" href="./paginas/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link itemNav" href="./paginas/catalogo.html">Catalogo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link itemNav" href="./paginas/novedades.html">Novedades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link itemNav" href="./paginas/contacto.html" target="_blank">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+  
+      </header>
       <div class="jumbotron">
 
           <div class="cartaBanner">
@@ -51,7 +56,7 @@
               mecánica confiable para muchos propositos (vehiculos, plantas
               eolicas, maquinaria industrial, etc.)
             </p>
-            <a href="./pages/contacto.html" class="btnBanner">Saber más</a>
+            <a href="./paginas/contacto.html" class="btnBanner">Saber más</a>
           </div>
 
           </div>
@@ -60,6 +65,7 @@
       <hr />
       <section class="nosotrosHome">
         <h3 class="tituloSeccion" data-aos="fade-down">Un poco sobre nosotros</h3>
+
         <p id="parrafoNosotrosHome">
           Somos una de las marcas de motores eléctricos y piezas mecánicas que
           más ha vendido en los ultimos 2 años y queremos seguir otorgando
@@ -74,7 +80,7 @@
       <h3 class="tituloSeccion" data-aos="fade-down">Un poco sobre nosotros</h3>
       <section class="seccionProductosHome">
 
-        <div id="carousel" class="carousel slide" data-ride="carousel" data-aos="fade"  data-aos-duration="1000">
+        <div id="carousel" class="carousel slide " data-ride="carousel" data-aos="fade"  data-aos-duration="1000">
 
           <ul class="carousel-indicators">
             <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -84,20 +90,20 @@
 
           <div class="carousel-inner">
             <div class="carousel-item justify-content-center active">
-              <a href=""><img class="imgCarousel" src="./imagenes/motor200KW.jpg" alt="KC-400"></a>
+              <a href="" class="backTransp"><img class="imgCarousel" src="./imagenes/motor200KW.jpg" alt="KC-400"></a>
               <div class="carousel-caption" >
                 <h3 class="text-black tituloCarouselInicio">KC-400</h3>
 
               </div>
             </div>
             <div class="carousel-item justify-content-center">
-              <a href=""><img class="imgCarousel" src="./imagenes/motor400W.jpg" alt="UKC-200"></a>
+              <a href="" class="backTransp"><img class="imgCarousel" src="./imagenes/motor400W.jpg" alt="UKC-200"></a>
               <div class="carousel-caption" >
                 <h3 class="tituloCarouselInicio">UKC-200</h3>
               </div>
             </div>
             <div class="carousel-item justify-content-center">
-              <a href=""><img class="imgCarousel" src="./imagenes/motor500KW.webp" alt="MKC-560"></a>
+              <a href="" class="backTransp"><img class="imgCarousel" src="./imagenes/motor500KW.webp" alt="MKC-560"></a>
               <div class="carousel-caption" id="textoCarousel">
                 <h3 class="tituloCarouselInicio" >MKC-560</h3>
               </div>
@@ -182,7 +188,7 @@
         </div>
           <a href="./paginas/novedades.html" class="btnVerMasHome">Ver mas</a>
       </section>
-    </main>
+
     <hr class="divisionFooterMain" />
     <footer>
       <div class="contenidoFooter">
@@ -199,7 +205,7 @@
 
         <ul class="navFooter">
           <li class="liNavFooter">
-            <a href="./paginas/nosotros.html" class="linkNavFooter">Nosotros</a>
+            <a href="./paginas/nosotros.html" class="linkNavFooter" >Nosotros</a>
           </li>
           <li class="liNavFooter">
             <a href="./paginas/catalogo.html" class="linkNavFooter">Catalogo</a>
@@ -208,22 +214,46 @@
             <a href="./paginas/novedades.html" class="linkNavFooter">Novedades</a>
           </li>
           <li class="liNavFooter">
-            <a href="./paginas/contacto.html" class="linkNavFooter">Contacto</a>
+            <a href="./paginas/contacto.html" class="linkNavFooter" target="_blank">Contacto</a>
           </li>
         </ul>
         <nav class="redesFooter">
-          <a class="linkRedes" href=""><i class="bi bi-whatsapp"></i></a>
-          <a class="linkRedes" href=""><i class="bi bi-twitter-x"></i></a>
-          <a class="linkRedes" href=""><i class="bi bi-instagram"></i></a>
+          <a class="linkRedes" href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>
+          <a class="linkRedes" href="whatsapp.com/?lang=es_LA"><i class="bi bi-whatsapp"></i></a>
+          <a class="linkRedes" href="https://x.com"><i class="bi bi-twitter-x"></i></a>
         </nav>
       </div>
       <h4 class="copy">Copyright TechEngine 2024©</h4>
     </footer>
+  </main>
+    <div class="position-fixed bottom" style="z-index: 999; right: 0; bottom: 0;">
+      <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true" data-delay="10000">
+        <div class="toast-header justify-content-between">
+          <h4><strong class="mr-auto">TechEngine⚙️</strong></h4>
+          <small>Ahora</small>
+          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="toast-body justify-content-center">
+          <h5>Cualquier duda o problema no dude en contactarnos</h5>
+          <a href="./paginas/contacto.html" class="btnVerMasToast">Contacto</a>
+        </div>
+      </div>
+    </div>
 
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+
+      $(document).ready(function(){
+        $('.toast').toast('show');
+      });
+
       AOS.init();
     </script>
   </body>
